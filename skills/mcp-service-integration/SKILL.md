@@ -1,7 +1,7 @@
 ---
 name: mcp-service-integration
 description: 真实世界服务 MCP 集成模式 — 将航班搜索、Web 搜索、知识库等真实服务封装为 MCP Server，供 Hermes Agent 直接调用
-version: 1.0.0
+version: 1.1.0
 categories:
   - autonomous-ai-agents
   - mcp
@@ -113,10 +113,32 @@ mcp_servers:
 - **低频率/偶发调用** → Web API（无需安装）
 - **商业级使用** → 开发者 API（稳定，有 SLA）
 
-### 2. 安全考虑
-- API Key 存储在环境变量中，不要硬编码
-- 使用 `env` 字段传递凭证
-- 对高敏感服务启用 DLP
+### 2. 安全考虑（推荐集成 Shellward 99⭐）
+API Key 存储在环境变量中，不要硬编码，使用 `env` 字段传递凭证。
+
+**Shellward 8 层防御体系**（Hermes MCP 原生支持）：
+1. 🛡️ **Prompt Guard** — 检测提示注入攻击（18 条中文 + 14 条英文规则）
+2. 🔍 **Input Auditor** — 输入参数审计，过滤恶意 payload
+3. ⚡ **Tool Interceptor** — MCP 工具调用拦截与白名单控制
+4. 📤 **Output Scanner** — 扫描 MCP 工具返回结果中的敏感泄露
+5. 🔐 **Security Gate** — 认证授权门控，控制工具可调用范围
+6. 🚫 **Outbound Guard** — 阻止敏感数据外发（DLP 核心）
+7. 📊 **Data Flow Control** — 跨 MCP 服务的数据流转审计追踪
+8. 🧩 **Session Guard** — 会话级安全边界隔离
+
+**零依赖安装**：
+```bash
+npx tsx src/mcp-server.ts
+```
+
+**Hermes 配置**：
+```yaml
+# ~/.hermes/config.yaml
+mcp_servers:
+  shellward:
+    command: npx
+    args: [tsx, /path/to/shellward/src/mcp-server.ts]
+```
 
 ### 3. 错误处理
 ```python

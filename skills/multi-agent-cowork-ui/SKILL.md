@@ -1,7 +1,7 @@
 ---
 name: multi-agent-cowork-ui
 description: 多 AI 代理同事桌面 UI 模式 — 让 Hermes Agent 与其他 AI CLI 代理在统一桌面界面中协同工作
-version: 1.0.0
+version: 1.1.0
 categories:
   - autonomous-ai-agents
   - productivity
@@ -17,18 +17,55 @@ categories:
 ## 核心架构
 
 ```
-┌─────────────────────────────────────────┐
-│          统一桌面 UI (AionUi/Scarf)      │
-├────────────────┬────────────────────────┤
-│ Hermes Agent   │ Claude Code / Codex    │
-├────────────────┼────────────────────────┤
-│ OpenCode       │ Gemini CLI / OpenClaw  │
-├────────────────┴────────────────────────┤
-│  跨代理会话管理 · 记忆共享 · 工作流编排   │
-├─────────────────────────────────────────┤
-│  24/7 后台运行 · 本地优先 · SSH 远程     │
-└─────────────────────────────────────────┘
+┌──────────────────────────────────────────────────┐
+│              统一桌面 UI (AionUi)                  │
+├──────────────────────────────────────────────────┤
+│  ┌─────────── Single-Agent Mode ────────────┐    │
+│  │  内置 Agent引擎 · 零配置启动 · 内置 20+ 助手   │    │
+│  │  文件读写 · 网页搜索 · 图像生成 · MCP 工具    │    │
+│  └──────────────────────────────────────────┘    │
+│                                                     │
+│  ┌─────────── Multi-Agent Mode ─────────────┐     │
+│  │  Auto-detect: Claude Code / Codex        │     │
+│  │  / Hermes Agent / Qwen Code / OpenClaw   │     │
+│  │  / Gemini CLI / Kiro + 16+ CLI agents    │     │
+│  └──────────────────────────────────────────┘     │
+│                                                     │
+│  ┌─────────── Team Mode (AC Protocol) ─────┐      │
+│  │  Leader → 任务分解 → Teammates (并行)     │     │
+│  │  Teammate A (Claude Code) → 写代码       │     │
+│  │  Teammate B (Codex) → 测试               │     │
+│  │  Teammate C (Hermes) → 文档              │     │
+│  │  ACP通信 · 异步信箱 · 共享工作区          │     │
+│  └──────────────────────────────────────────┘     │
+├──────────────────────────────────────────────────┤
+│  聊天集成: Telegram / Lark / DingTalk / WeChat    │
+│  定时任务: Cron · 固定间隔 · 一次触发              │
+│  远程访问: WebUI · LAN · 密码/QR 登录              │
+│  24/7 自动化 · 本地优先 · 跨平台(macOS/Win/Linux) │
+└──────────────────────────────────────────────────┘
 ```
+
+## 三大代理模式详解
+
+### 🟢 Single-Agent Mode（内置代理）
+- **零安装**：内置完整 Agent 引擎，无需额外安装 CLI
+- **20+ 专业助手**：Cowork、PPT 创建、Word 文档、Excel 分析、Morph PPT 3D、Pitch Deck、Dashboard、学术论文、金融模型等
+- **零配置**：用 Google 登录或用任意 API Key 即用
+
+### 🟡 Multi-Agent Mode（多代理并行）
+- **Auto-detect**：自动识别已安装的 CLI 工具
+- **统一界面**：一个 Cowork 平台管理所有 AI 代理
+- **并行会话**：多个代理独立上下文并发运行
+- **MCP 统一管理**：一次配置 MCP 工具，自动同步到所有代理
+
+### 🔴 Team Mode（团队协奏模式）
+- **Leader 代理**：接收指令，分解为子任务，协调 Teammate
+- **Teammate 代理**：并行执行子任务，各自独立模型
+- **ACP 协议**：Agent Communication Protocol 层
+- **共享工作区**：所有代理读写同一文件夹
+- **异步信箱**：结果通过内置 Team MCP Server 同步
+- **动态扩缩**：运行时添加/移除 Teammate，闲置代理自动回收
 
 ## 适用场景
 - 需要同时使用多个 AI 代理工具的开发者
@@ -91,7 +128,7 @@ npm install
 
 ## Hermes Agent 集成配置
 
-在 AionUi 或类似 UI 中配置 Hermes：
+### 在 AionUi 中配置 Hermes
 
 ```json
 {
@@ -105,6 +142,27 @@ npm install
         "HERMES_HOME": "/home/zbc/.hermes"
       }
     }
+  }
+}
+```
+
+### Team Mode 配置（Leader + Teammate）
+
+```json
+{
+  "team": {
+    "leader": {
+      "agent": "claude-code",
+      "role": "架构与分解"
+    },
+    "teammates": [
+      { "agent": "codex", "role": "编码实现" },
+      { "agent": "hermes", "role": "文档测试" },
+      { "agent": "qwen-code", "role": "前端开发" }
+    ],
+    "protocol": "acp",
+    "shared_workspace": "./project",
+    "mailbox": "async"
   }
 }
 ```
