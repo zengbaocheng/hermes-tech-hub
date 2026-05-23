@@ -101,8 +101,9 @@ cp -r skills/* ~/.hermes/skills/
 | 规划工作流 | 1 | Planning with Files(⭐22k) — Manus 风格 |
 | 管理工具 | 2 | Control Room、ClawPanel |
 
-> 📖 详细集成指南: [docs/integration-guide.md](docs/integration-guide.md)
+## 📖 详细集成指南: [docs/integration-guide.md](docs/integration-guide.md)
 > 📦 完整外部库索引: [vendors/README.md](vendors/README.md)
+> 📚 官方架构参考: [docs/references/](docs/references/)
 
 ## 🌱 持续增强
 
