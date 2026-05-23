@@ -1,0 +1,48 @@
+# Default Hermes Config Template
+# See full docs: https://hermes-agent.nousresearch.com/docs/user-guide/configuration
+
+# ── Model ──
+model:
+  default: deepseek-v4-flash
+  provider: custom
+  base_url: ""     # Replace with your provider URL
+  api_key: ""      # Use .env for secrets
+  context_length: 128000
+
+# ── Agent ──
+agent:
+  max_turns: 90
+  tool_use_enforcement: true
+
+# ── Terminal ──
+terminal:
+  backend: local
+  timeout: 180
+
+# ── Compression ──
+compression:
+  enabled: true
+  threshold: 0.50
+  target_ratio: 0.20
+
+# ── Memory ──
+memory:
+  memory_enabled: true
+  user_profile_enabled: true
+
+# ── Delegation ──
+delegation:
+  model: deepseek-v4-flash
+  max_iterations: 50
+
+# ── Security ──
+security:
+  tirith_enabled: true
+
+# ── Cron ──
+cron:
+  enabled: true
+
+# ── Gateway ──
+gateway:
+  enabled: false

@@ -1,0 +1,38 @@
+name: Project Health Monitor
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # 每天 UTC 4:00
+  workflow_dispatch:
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Check repository health
+        run: |
+          echo "## 📊 Repository Health Report" > report.md
+          echo "" >> report.md
+          
+          # Check file count
+          FILE_COUNT=$(find . -type f -not -path './.git/*' | wc -l)
+          echo "- **Total files**: $FILE_COUNT" >> report.md
+          
+          # Check skill count
+          SKILL_COUNT=$(find skills -name "SKILL.md" | wc -l)
+          echo "- **Skills**: $SKILL_COUNT" >> report.md
+          
+          # Check last commit
+          LAST_COMMIT=$(git log -1 --format="%ci - %s" 2>/dev/null)
+          echo "- **Last commit**: $LAST_COMMIT" >> report.md
+          
+          # Check branches
+          BRANCH_COUNT=$(git branch -r 2>/dev/null | wc -l)
+          echo "- **Remote branches**: $BRANCH_COUNT" >> report.md
+          
+          echo "" >> report.md
+          echo "_Generated at $(date -u '+%Y-%m-%d %H:%M UTC')_" >> report.md
+          
+          cat report.md

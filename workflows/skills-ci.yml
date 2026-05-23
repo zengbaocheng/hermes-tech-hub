@@ -1,0 +1,44 @@
+name: Skills CI — Quality Check
+
+on:
+  pull_request:
+    paths:
+      - 'skills/**'
+  push:
+    branches: [main]
+    paths:
+      - 'skills/**'
+
+jobs:
+  validate-skills:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Validate SKILL.md files
+        run: |
+          errors=0
+          for f in $(find skills -name "SKILL.md"); do
+            # Check frontmatter presence
+            if ! head -1 "$f" | grep -q "^---$"; then
+              echo "❌ $f: Missing YAML frontmatter (must start with ---)"
+              errors=$((errors+1))
+              continue
+            fi
+            
+            # Check required fields
+            for field in "name:" "description:" "version:"; do
+              if ! grep -q "^$field" "$f"; then
+                echo "❌ $f: Missing field '$field'"
+                errors=$((errors+1))
+              fi
+            done
+            
+            echo "✅ $f: OK"
+          done
+          
+          if [ $errors -gt 0 ]; then
+            echo "::error::Found $errors skill validation errors"
+            exit 1
+          fi
+          echo "🎉 All skills validated successfully"
