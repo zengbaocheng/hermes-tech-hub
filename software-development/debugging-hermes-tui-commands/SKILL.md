@@ -1,16 +1,27 @@
 ---
-name: debugging-hermes-tui-commands
-description: "Debug Hermes TUI slash commands: Python, gateway, Ink UI."
-version: 1.0.0
-author: Hermes Agent
-license: MIT
-platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [debugging, hermes-agent, tui, slash-commands, typescript, python]
-    related_skills: [python-debugpy, node-inspect-debugger, systematic-debugging]
+    tags:
+    - debugging
+    - hermes-agent
+    - tui
+    - slash-commands
+    - typescript
+    - python
+    related_skills:
+    - python-debugpy
+    - node-inspect-debugger
+    - systematic-debugging
+  version: 1.0.0
+  author: Hermes Agent
+  platforms:
+  - linux
+  - macos
+  - windows
+description: 'Debug Hermes TUI slash commands: Python, gateway, Ink UI.'
+license: MIT
+name: debugging-hermes-tui-commands
 ---
-
 # Debugging Hermes TUI Slash Commands
 
 ## Overview

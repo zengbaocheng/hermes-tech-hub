@@ -1,16 +1,29 @@
 ---
-name: chroma
-description: Open-source embedding database for AI applications. Store embeddings and metadata, perform vector and full-text search, filter by metadata. Simple 4-function API. Scales from notebooks to production clusters. Use for semantic search, RAG applications, or document retrieval. Best for local development and open-source projects.
-version: 1.0.0
-author: Orchestra Research
-license: MIT
-dependencies: [chromadb, sentence-transformers]
 metadata:
   hermes:
-    tags: [RAG, Chroma, Vector Database, Embeddings, Semantic Search, Open Source, Self-Hosted, Document Retrieval, Metadata Filtering]
-
+    tags:
+    - RAG
+    - Chroma
+    - Vector Database
+    - Embeddings
+    - Semantic Search
+    - Open Source
+    - Self-Hosted
+    - Document Retrieval
+    - Metadata Filtering
+  version: 1.0.0
+  author: Orchestra Research
+  dependencies:
+  - chromadb
+  - sentence-transformers
+description: Open-source embedding database for AI applications. Store embeddings
+  and metadata, perform vector and full-text search, filter by metadata. Simple 4-function
+  API. Scales from notebooks to production clusters. Use for semantic search, RAG
+  applications, or document retrieval. Best for local development and open-source
+  projects.
+license: MIT
+name: chroma
 ---
-
 # Chroma - Open-Source Embedding Database
 
 The AI-native database for building LLM applications with memory.
@@ -405,5 +418,3 @@ collection = client.get_or_create_collection("my_docs")
 - **Discord**: https://discord.gg/MMeYNTmh3x
 - **Version**: 1.3.3+
 - **License**: Apache 2.0
-
-

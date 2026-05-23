@@ -1,12 +1,16 @@
 ---
-name: comfyui
-description: ComfyUI 多媒体生成技能 - 一句话生成图片、视频、音频，支持复杂工作流编排
-version: 1.0.0
-author: hermes-self-learner
 metadata:
-  tags: [image-generation, video-generation, multimedia, comfyui, workflow]
+  tags:
+  - image-generation
+  - video-generation
+  - multimedia
+  - comfyui
+  - workflow
+  version: 1.0.0
+  author: hermes-self-learner
+description: ComfyUI 多媒体生成技能 - 一句话生成图片、视频、音频，支持复杂工作流编排
+name: comfyui
 ---
-
 # ComfyUI 多媒体生成技能
 
 ## 功能概述

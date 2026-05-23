@@ -1,12 +1,13 @@
 ---
-name: auto-file-cleanup
-description: 自动文件清理机制 - 当生成文件超过10G时自动删除最早的文件
-version: 1.0.0
-author: 马丞相
 metadata:
-  tags: [auto-cleanup, file-management]
+  tags:
+  - auto-cleanup
+  - file-management
+  version: 1.0.0
+  author: 马丞相
+description: 自动文件清理机制 - 当生成文件超过10G时自动删除最早的文件
+name: auto-file-cleanup
 ---
-
 # 自动文件清理机制
 
 ## 重要说明

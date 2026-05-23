@@ -1,10 +1,10 @@
 ---
+description: Hermes 系统管理：开机自启配置、定时任务、手动备份恢复、Gateway 管理。
 name: system-management
-description: "Hermes 系统管理：开机自启配置、定时任务、手动备份恢复、Gateway 管理。"
-related_skills:
+metadata:
+  related_skills:
   - hermes-version-guard
 ---
-
 ## 开机自动运行配置
 
 ### 已配置的服务

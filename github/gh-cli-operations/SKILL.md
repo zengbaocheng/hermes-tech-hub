@@ -1,15 +1,29 @@
 ---
-name: gh-cli-operations
-description: "gh CLI 全能操作技能 - 仓库/Issues/PR/Release/Gist/Actions/Secrets 全功能管理"
-version: 1.0.0
-author: 马丞相
-platforms: [linux, macos]
 metadata:
   hermes:
-    tags: [GitHub, gh-cli, CLI, Repository, Issue, PR, Actions, Release]
-    related_skills: [github-auth, github-pr-workflow, github-code-review, github-issues, github-repo-management]
+    tags:
+    - GitHub
+    - gh-cli
+    - CLI
+    - Repository
+    - Issue
+    - PR
+    - Actions
+    - Release
+    related_skills:
+    - github-auth
+    - github-pr-workflow
+    - github-code-review
+    - github-issues
+    - github-repo-management
+  version: 1.0.0
+  author: 马丞相
+  platforms:
+  - linux
+  - macos
+description: gh CLI 全能操作技能 - 仓库/Issues/PR/Release/Gist/Actions/Secrets 全功能管理
+name: gh-cli-operations
 ---
-
 # gh CLI 全能操作技能
 
 > GitHub CLI (`gh`) 的多平台管理技能。适用于创建仓库、管理 Issues、处理 PR、发布 Release、管理 Gist、搜索、操作 Secrets/变量等各种场景。

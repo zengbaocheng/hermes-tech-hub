@@ -1,15 +1,25 @@
 ---
-name: base
-description: Query Base (Ethereum L2) blockchain data with USD pricing — wallet balances, token info, transaction details, gas analysis, contract inspection, whale detection, and live network stats. Uses Base RPC + CoinGecko. No API key required.
-version: 0.1.0
-author: youssefea
-license: MIT
 metadata:
   hermes:
-    tags: [Base, Blockchain, Crypto, Web3, RPC, DeFi, EVM, L2, Ethereum]
-    related_skills: []
+    tags:
+    - Base
+    - Blockchain
+    - Crypto
+    - Web3
+    - RPC
+    - DeFi
+    - EVM
+    - L2
+    - Ethereum
+    related_skills: ~
+  version: 0.1.0
+  author: youssefea
+description: Query Base (Ethereum L2) blockchain data with USD pricing — wallet balances,
+  token info, transaction details, gas analysis, contract inspection, whale detection,
+  and live network stats. Uses Base RPC + CoinGecko. No API key required.
+license: MIT
+name: base
 ---
-
 # Base Blockchain Skill
 
 Query Base (Ethereum L2) on-chain data enriched with USD pricing via CoinGecko.

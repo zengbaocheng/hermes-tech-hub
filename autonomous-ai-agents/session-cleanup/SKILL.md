@@ -1,13 +1,14 @@
 ---
-name: session-cleanup
-description: 会话文件自动清理机制 - 每3天清理旧的会话文件
-version: 1.0.0
-author: 马丞相
 metadata:
-  tags: [session-cleanup, cleanup]
-  schedule: "0 4 */3 * *"  # 每3天4点
+  tags:
+  - session-cleanup
+  - cleanup
+  schedule: 0 4 */3 * *
+  version: 1.0.0
+  author: 马丞相
+description: 会话文件自动清理机制 - 每3天清理旧的会话文件
+name: session-cleanup
 ---
-
 # 会话文件自动清理机制
 
 ## 功能概述

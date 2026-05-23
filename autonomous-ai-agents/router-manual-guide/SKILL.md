@@ -1,12 +1,15 @@
 ---
-name: router-manual-guide
-description: 角色路由管理机制手动操作教程 - 健康检测、模型管理、定时任务修改指南
-version: 1.0.0
-author: 马丞相
 metadata:
-  tags: [manual, guide, router, health-check]
+  tags:
+  - manual
+  - guide
+  - router
+  - health-check
+  version: 1.0.0
+  author: 马丞相
+description: 角色路由管理机制手动操作教程 - 健康检测、模型管理、定时任务修改指南
+name: router-manual-guide
 ---
-
 # 角色路由管理机制 - 手动操作教程
 
 ## 目录

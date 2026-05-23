@@ -1,13 +1,18 @@
 ---
-name: github-repo-monitor
-description: GitHub 仓库自动化监控 - Issue/PR 动态监控 + Telegram 推送，支持多仓库分组管理
-version: 1.0.0
-author: 马丞相
 metadata:
-  tags: [github, monitoring, automation, cron, telegram]
-  platforms: [linux]
+  tags:
+  - github
+  - monitoring
+  - automation
+  - cron
+  - telegram
+  platforms:
+  - linux
+  version: 1.0.0
+  author: 马丞相
+description: GitHub 仓库自动化监控 - Issue/PR 动态监控 + Telegram 推送，支持多仓库分组管理
+name: github-repo-monitor
 ---
-
 # GitHub 仓库自动化监控系统
 
 ## 功能概述

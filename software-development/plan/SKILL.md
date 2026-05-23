@@ -1,16 +1,24 @@
 ---
-name: plan
-description: "Plan mode: write markdown plan to .hermes/plans/, no exec."
-version: 1.0.0
-author: Hermes Agent
-license: MIT
-platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [planning, plan-mode, implementation, workflow]
-    related_skills: [writing-plans, subagent-driven-development]
+    tags:
+    - planning
+    - plan-mode
+    - implementation
+    - workflow
+    related_skills:
+    - writing-plans
+    - subagent-driven-development
+  version: 1.0.0
+  author: Hermes Agent
+  platforms:
+  - linux
+  - macos
+  - windows
+description: 'Plan mode: write markdown plan to .hermes/plans/, no exec.'
+license: MIT
+name: plan
 ---
-
 # Plan Mode
 
 Use this skill when the user wants a plan instead of execution.

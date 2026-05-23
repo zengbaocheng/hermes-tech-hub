@@ -1,16 +1,25 @@
 ---
-name: arxiv
-description: "Search arXiv papers by keyword, author, category, or ID."
-version: 1.0.0
-author: Hermes Agent
-license: MIT
-platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [Research, Arxiv, Papers, Academic, Science, API]
-    related_skills: [ocr-and-documents]
+    tags:
+    - Research
+    - Arxiv
+    - Papers
+    - Academic
+    - Science
+    - API
+    related_skills:
+    - ocr-and-documents
+  version: 1.0.0
+  author: Hermes Agent
+  platforms:
+  - linux
+  - macos
+  - windows
+description: Search arXiv papers by keyword, author, category, or ID.
+license: MIT
+name: arxiv
 ---
-
 # arXiv Research
 
 Search and retrieve academic papers from arXiv via their free REST API. No API key, no dependencies — just curl.

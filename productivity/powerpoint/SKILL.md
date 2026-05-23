@@ -1,10 +1,13 @@
 ---
-name: powerpoint
-description: "Create, read, edit .pptx decks, slides, notes, templates."
+description: Create, read, edit .pptx decks, slides, notes, templates.
 license: Proprietary. LICENSE.txt has complete terms
-platforms: [linux, macos, windows]
+name: powerpoint
+metadata:
+  platforms:
+  - linux
+  - macos
+  - windows
 ---
-
 # Powerpoint Skill
 
 ## When to use

@@ -1,24 +1,33 @@
 ---
-name: html-screenshot-image-gen
-description: "Free image generation using HTML templates + browser screenshot. Zero API calls. Perfect for WeChat public accounts, data cards, and infographic-style images."
-version: 1.0.0
-author: Hermes Agent (inspired by 娇姐's tutorial)
-license: MIT
-dependencies: []
 metadata:
   hermes:
-    tags: [Image, Screenshot, HTML, Infographic, WeChat, Free, No-API]
+    tags:
+    - Image
+    - Screenshot
+    - HTML
+    - Infographic
+    - WeChat
+    - Free
+    - No-API
     trigger_phrases:
-      - "做成信息图"
-      - "做成数据卡片"
-      - "生成封面"
-      - "做一张对比图"
-      - "生成图片"
-      - "做成金句图"
-    related_skills: [excalidraw, baoyu-infographic]
-
+    - 做成信息图
+    - 做成数据卡片
+    - 生成封面
+    - 做一张对比图
+    - 生成图片
+    - 做成金句图
+    related_skills:
+    - excalidraw
+    - baoyu-infographic
+  version: 1.0.0
+  author: Hermes Agent (inspired by 娇姐's tutorial)
+  dependencies: ~
+description: Free image generation using HTML templates + browser screenshot. Zero
+  API calls. Perfect for WeChat public accounts, data cards, and infographic-style
+  images.
+license: MIT
+name: html-screenshot-image-gen
 ---
-
 # HTML Screenshot Image Generator
 
 用 HTML 模板 + 浏览器截图实现零成本生图。适合公众号配图、数据卡片、信息图、金句图。

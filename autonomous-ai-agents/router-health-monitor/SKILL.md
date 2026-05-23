@@ -1,13 +1,16 @@
 ---
-name: router-health-monitor
-description: 角色路由健康监控系统 - 深夜检测各角色模型可用性，失效时自动切换主备模型，汇报结果给主上
-version: 2.0.0
-author: 马丞相
 metadata:
-  tags: [health-monitor, router, auto-fallback, nightly]
-  schedule: "0 3 * * *"  # 每天深夜3点
+  tags:
+  - health-monitor
+  - router
+  - auto-fallback
+  - nightly
+  schedule: 0 3 * * *
+  version: 2.0.0
+  author: 马丞相
+description: 角色路由健康监控系统 - 深夜检测各角色模型可用性，失效时自动切换主备模型，汇报结果给主上
+name: router-health-monitor
 ---
-
 # 角色路由健康监控系统 v2.0
 
 ## 功能概述

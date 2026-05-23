@@ -1,12 +1,14 @@
 ---
-name: hermes-self-learner
-description: 自主学习技能 - 根据主人提供的网址链接，自主学习技能、使用方法、情景场景，并生成可用的技能文件和操作指南
-version: 1.0.0
-author: 马丞相
 metadata:
-  tags: [auto-learning, self-improvement, skill-creation]
+  tags:
+  - auto-learning
+  - self-improvement
+  - skill-creation
+  version: 1.0.0
+  author: 马丞相
+description: 自主学习技能 - 根据主人提供的网址链接，自主学习技能、使用方法、情景场景，并生成可用的技能文件和操作指南
+name: hermes-self-learner
 ---
-
 # Hermes 自主学习技能
 
 ## 重要说明

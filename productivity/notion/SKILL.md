@@ -1,18 +1,28 @@
 ---
-name: notion
-description: "Notion API + ntn CLI: pages, databases, markdown, Workers."
-version: 2.0.0
-author: community
-license: MIT
-platforms: [linux, macos, windows]
-prerequisites:
-  env_vars: [NOTION_API_KEY]
 metadata:
   hermes:
-    tags: [Notion, Productivity, Notes, Database, API, CLI, Workers]
+    tags:
+    - Notion
+    - Productivity
+    - Notes
+    - Database
+    - API
+    - CLI
+    - Workers
     homepage: https://developers.notion.com
+  version: 2.0.0
+  author: community
+  platforms:
+  - linux
+  - macos
+  - windows
+  prerequisites:
+    env_vars:
+    - NOTION_API_KEY
+description: 'Notion API + ntn CLI: pages, databases, markdown, Workers.'
+license: MIT
+name: notion
 ---
-
 # Notion
 
 Talk to Notion two ways. Same integration token works for both — pick by what's available.

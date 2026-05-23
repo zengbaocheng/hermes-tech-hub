@@ -1,16 +1,23 @@
 ---
-name: canvas
-description: Canvas LMS integration — fetch enrolled courses and assignments using API token authentication.
-version: 1.0.0
-author: community
-license: MIT
-prerequisites:
-  env_vars: [CANVAS_API_TOKEN, CANVAS_BASE_URL]
 metadata:
   hermes:
-    tags: [Canvas, LMS, Education, Courses, Assignments]
+    tags:
+    - Canvas
+    - LMS
+    - Education
+    - Courses
+    - Assignments
+  version: 1.0.0
+  author: community
+  prerequisites:
+    env_vars:
+    - CANVAS_API_TOKEN
+    - CANVAS_BASE_URL
+description: Canvas LMS integration — fetch enrolled courses and assignments using
+  API token authentication.
+license: MIT
+name: canvas
 ---
-
 # Canvas LMS — Course & Assignment Access
 
 Read-only access to Canvas LMS for listing courses and assignments.

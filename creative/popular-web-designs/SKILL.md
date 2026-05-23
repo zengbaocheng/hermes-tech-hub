@@ -1,12 +1,23 @@
 ---
-name: popular-web-designs
 description: 54 real design systems (Stripe, Linear, Vercel) as HTML/CSS.
-version: 1.0.0
-author: Hermes Agent + Teknium (design systems sourced from VoltAgent/awesome-design-md)
 license: MIT
-tags: [design, css, html, ui, web-development, design-systems, templates]
-platforms: [linux, macos, windows]
-triggers:
+name: popular-web-designs
+metadata:
+  version: 1.0.0
+  author: Hermes Agent + Teknium (design systems sourced from VoltAgent/awesome-design-md)
+  tags:
+  - design
+  - css
+  - html
+  - ui
+  - web-development
+  - design-systems
+  - templates
+  platforms:
+  - linux
+  - macos
+  - windows
+  triggers:
   - build a page that looks like
   - make it look like stripe
   - design like linear
@@ -17,7 +28,6 @@ triggers:
   - dashboard design
   - website styled like
 ---
-
 # Popular Web Designs
 
 54 real-world design systems ready for use when generating HTML/CSS. Each template captures a

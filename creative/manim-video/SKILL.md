@@ -1,10 +1,13 @@
 ---
+description: 'Manim CE animations: 3Blue1Brown math/algo videos.'
 name: manim-video
-description: "Manim CE animations: 3Blue1Brown math/algo videos."
-version: 1.0.0
-platforms: [linux, macos, windows]
+metadata:
+  version: 1.0.0
+  platforms:
+  - linux
+  - macos
+  - windows
 ---
-
 # Manim Video Production Pipeline
 
 ## When to use

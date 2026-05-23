@@ -1,16 +1,24 @@
 ---
-name: jupyter-live-kernel
-description: "Iterative Python via live Jupyter kernel (hamelnb)."
-version: 1.0.0
-author: Hermes Agent
-license: MIT
-platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [jupyter, notebook, repl, data-science, exploration, iterative]
+    tags:
+    - jupyter
+    - notebook
+    - repl
+    - data-science
+    - exploration
+    - iterative
     category: data-science
+  version: 1.0.0
+  author: Hermes Agent
+  platforms:
+  - linux
+  - macos
+  - windows
+description: Iterative Python via live Jupyter kernel (hamelnb).
+license: MIT
+name: jupyter-live-kernel
 ---
-
 # Jupyter Live Kernel (hamelnb)
 
 Gives you a **stateful Python REPL** via a live Jupyter kernel. Variables persist

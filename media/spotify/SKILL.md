@@ -1,18 +1,33 @@
 ---
-name: spotify
-description: "Spotify: play, search, queue, manage playlists and devices."
-version: 1.0.0
-author: Hermes Agent
-license: MIT
-platforms: [linux, macos, windows]
-prerequisites:
-  tools: [spotify_playback, spotify_devices, spotify_queue, spotify_search, spotify_playlists, spotify_albums, spotify_library]
 metadata:
   hermes:
-    tags: [spotify, music, playback, playlists, media]
-    related_skills: [gif-search]
+    tags:
+    - spotify
+    - music
+    - playback
+    - playlists
+    - media
+    related_skills:
+    - gif-search
+  version: 1.0.0
+  author: Hermes Agent
+  platforms:
+  - linux
+  - macos
+  - windows
+  prerequisites:
+    tools:
+    - spotify_playback
+    - spotify_devices
+    - spotify_queue
+    - spotify_search
+    - spotify_playlists
+    - spotify_albums
+    - spotify_library
+description: 'Spotify: play, search, queue, manage playlists and devices.'
+license: MIT
+name: spotify
 ---
-
 # Spotify
 
 Control the user's Spotify account via the Hermes Spotify toolset (7 tools). Setup guide: https://hermes-agent.nousresearch.com/docs/user-guide/features/spotify

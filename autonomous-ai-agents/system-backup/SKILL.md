@@ -1,13 +1,15 @@
 ---
-name: system-backup
-description: 系统依赖文件自动备份机制 - 每周日2点备份，保留最近2周
-version: 1.0.0
-author: 马丞相
 metadata:
-  tags: [backup, system-files, scheduler]
-  schedule: "0 2 * * 0"  # 每周日2点
+  tags:
+  - backup
+  - system-files
+  - scheduler
+  schedule: 0 2 * * 0
+  version: 1.0.0
+  author: 马丞相
+description: 系统依赖文件自动备份机制 - 每周日2点备份，保留最近2周
+name: system-backup
 ---
-
 # 系统依赖文件自动备份机制
 
 ## 功能概述

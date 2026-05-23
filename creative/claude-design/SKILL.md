@@ -1,16 +1,32 @@
 ---
-name: claude-design
-description: Design one-off HTML artifacts (landing, deck, prototype).
-version: 1.0.0
-author: BadTechBandit
-license: MIT
-platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [design, html, prototype, ux, ui, creative, artifact, deck, motion, design-system]
-    related_skills: [design-md, popular-web-designs, excalidraw, architecture-diagram]
+    tags:
+    - design
+    - html
+    - prototype
+    - ux
+    - ui
+    - creative
+    - artifact
+    - deck
+    - motion
+    - design-system
+    related_skills:
+    - design-md
+    - popular-web-designs
+    - excalidraw
+    - architecture-diagram
+  version: 1.0.0
+  author: BadTechBandit
+  platforms:
+  - linux
+  - macos
+  - windows
+description: Design one-off HTML artifacts (landing, deck, prototype).
+license: MIT
+name: claude-design
 ---
-
 # Claude Design for CLI/API Agents
 
 Use this skill when the user asks for design work that would normally fit Claude Design, but the agent is running in a CLI/API environment instead of the hosted Claude Design web UI.

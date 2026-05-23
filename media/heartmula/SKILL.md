@@ -1,14 +1,25 @@
 ---
-name: heartmula
-description: "HeartMuLa: Suno-like song generation from lyrics + tags."
-version: 1.0.0
-platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [music, audio, generation, ai, heartmula, heartcodec, lyrics, songs]
-    related_skills: [audiocraft]
+    tags:
+    - music
+    - audio
+    - generation
+    - ai
+    - heartmula
+    - heartcodec
+    - lyrics
+    - songs
+    related_skills:
+    - audiocraft
+  version: 1.0.0
+  platforms:
+  - linux
+  - macos
+  - windows
+description: 'HeartMuLa: Suno-like song generation from lyrics + tags.'
+name: heartmula
 ---
-
 # HeartMuLa - Open-Source Music Generation
 
 ## Overview

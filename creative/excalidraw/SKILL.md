@@ -1,18 +1,25 @@
 ---
-name: excalidraw
-description: "Hand-drawn Excalidraw JSON diagrams (arch, flow, seq)."
-version: 1.0.0
-author: Hermes Agent
-license: MIT
-dependencies: []
-platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [Excalidraw, Diagrams, Flowcharts, Architecture, Visualization, JSON]
-    related_skills: []
-
+    tags:
+    - Excalidraw
+    - Diagrams
+    - Flowcharts
+    - Architecture
+    - Visualization
+    - JSON
+    related_skills: ~
+  version: 1.0.0
+  author: Hermes Agent
+  dependencies: ~
+  platforms:
+  - linux
+  - macos
+  - windows
+description: Hand-drawn Excalidraw JSON diagrams (arch, flow, seq).
+license: MIT
+name: excalidraw
 ---
-
 # Excalidraw Diagram Skill
 
 Create diagrams by writing standard Excalidraw element JSON and saving as `.excalidraw` files. These files can be drag-and-dropped onto [excalidraw.com](https://excalidraw.com) for viewing and editing. No accounts, no API keys, no rendering libraries -- just JSON.
@@ -195,5 +202,3 @@ See `references/colors.md` for full color tables. Quick reference:
 - Do NOT use emoji in text -- they don't render in Excalidraw's font
 - For dark mode diagrams, see `references/dark-mode.md`
 - For larger examples, see `references/examples.md`
-
-

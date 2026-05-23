@@ -1,13 +1,16 @@
 ---
-name: system-health-monitor
-description: 系统健康监控 - API额度监控、磁盘空间监控、Hermes进程监控
-version: 1.0.0
-author: 马丞相
 metadata:
-  tags: [health-monitor, api-quota, disk-space, process]
-  schedule: "0 4 * * *"  # 每天4点
+  tags:
+  - health-monitor
+  - api-quota
+  - disk-space
+  - process
+  schedule: 0 4 * * *
+  version: 1.0.0
+  author: 马丞相
+description: 系统健康监控 - API额度监控、磁盘空间监控、Hermes进程监控
+name: system-health-monitor
 ---
-
 # 系统健康监控
 
 ## 功能概述

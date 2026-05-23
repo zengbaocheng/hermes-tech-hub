@@ -1,15 +1,24 @@
 ---
-name: blackbox
-description: Delegate coding tasks to Blackbox AI CLI agent. Multi-model agent with built-in judge that runs tasks through multiple LLMs and picks the best result. Requires the blackbox CLI and a Blackbox AI API key.
-version: 1.0.0
-author: Hermes Agent (Nous Research)
-license: MIT
 metadata:
   hermes:
-    tags: [Coding-Agent, Blackbox, Multi-Agent, Judge, Multi-Model]
-    related_skills: [claude-code, codex, hermes-agent]
+    tags:
+    - Coding-Agent
+    - Blackbox
+    - Multi-Agent
+    - Judge
+    - Multi-Model
+    related_skills:
+    - claude-code
+    - codex
+    - hermes-agent
+  version: 1.0.0
+  author: Hermes Agent (Nous Research)
+description: Delegate coding tasks to Blackbox AI CLI agent. Multi-model agent with
+  built-in judge that runs tasks through multiple LLMs and picks the best result.
+  Requires the blackbox CLI and a Blackbox AI API key.
+license: MIT
+name: blackbox
 ---
-
 # Blackbox CLI
 
 Delegate coding tasks to [Blackbox AI](https://www.blackbox.ai/) via the Hermes terminal. Blackbox is a multi-model coding agent CLI that dispatches tasks to multiple LLMs (Claude, Codex, Gemini, Blackbox Pro) and uses a judge to select the best implementation.

@@ -1,9 +1,12 @@
 ---
-name: obsidian
 description: Read, search, create, and edit notes in the Obsidian vault.
-platforms: [linux, macos, windows]
+name: obsidian
+metadata:
+  platforms:
+  - linux
+  - macos
+  - windows
 ---
-
 # Obsidian Vault
 
 Use this skill for filesystem-first Obsidian vault work: reading notes, listing notes, searching note files, creating notes, appending content, and adding wikilinks.

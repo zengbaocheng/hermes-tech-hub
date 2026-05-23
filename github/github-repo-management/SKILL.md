@@ -1,16 +1,29 @@
 ---
-name: github-repo-management
-description: "Clone/create/fork repos; manage remotes, releases, project scaffolding."
-version: 1.2.0
-author: Hermes Agent
-license: MIT
-platforms: [linux, macos, windows]
 metadata:
   hermes:
-    tags: [GitHub, Repositories, Git, Releases, Secrets, Configuration, Project Setup]
-    related_skills: [github-auth, github-pr-workflow, github-issues, github-issue-manager]
+    tags:
+    - GitHub
+    - Repositories
+    - Git
+    - Releases
+    - Secrets
+    - Configuration
+    - Project Setup
+    related_skills:
+    - github-auth
+    - github-pr-workflow
+    - github-issues
+    - github-issue-manager
+  version: 1.2.0
+  author: Hermes Agent
+  platforms:
+  - linux
+  - macos
+  - windows
+description: Clone/create/fork repos; manage remotes, releases, project scaffolding.
+license: MIT
+name: github-repo-management
 ---
-
 # GitHub Repository Management
 
 Create, clone, fork, configure, and manage GitHub repositories. Each section shows `gh` first, then the `git` + `curl` fallback.

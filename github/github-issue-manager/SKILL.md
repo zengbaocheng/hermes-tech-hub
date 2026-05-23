@@ -1,13 +1,17 @@
 ---
-name: github-issue-manager
-description: GitHub Issue 自动化管理 - 自然语言创建/查询/追踪 Issue，自动分类和状态更新
-version: 1.0.0
-author: 马丞相
 metadata:
-  tags: [github, issues, automation, project-management]
-  platforms: [linux]
+  tags:
+  - github
+  - issues
+  - automation
+  - project-management
+  platforms:
+  - linux
+  version: 1.0.0
+  author: 马丞相
+description: GitHub Issue 自动化管理 - 自然语言创建/查询/追踪 Issue，自动分类和状态更新
+name: github-issue-manager
 ---
-
 # GitHub Issue 自动化管理器
 
 ## 功能概述

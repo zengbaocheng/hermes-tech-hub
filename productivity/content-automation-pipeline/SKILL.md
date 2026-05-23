@@ -1,8 +1,9 @@
 ---
+description: 中文内容自动化生产线 — 从选题→写作→发布的完整管线，源自大V实战复盘（2.2万阅读，2600转发）。适用于：想搭建自媒体自动化管线、需要选题/写作工作流、用Hermes做内容生产的用户。
 name: content-automation-pipeline
-description: "中文内容自动化生产线 — 从选题→写作→发布的完整管线，源自大V实战复盘（2.2万阅读，2600转发）。适用于：想搭建自媒体自动化管线、需要选题/写作工作流、用Hermes做内容生产的用户。"
-version: "1.1.0"
-source: "https://mp.weixin.qq.com/s?__biz=MzkzMjkyMDExOA==&mid=2247485205&idx=1&sn=8921671fe1a010c08f9e83b274c7b4fb"
+metadata:
+  version: 1.1.0
+  source: https://mp.weixin.qq.com/s?__biz=MzkzMjkyMDExOA==&mid=2247485205&idx=1&sn=8921671fe1a010c08f9e83b274c7b4fb
 ---
 platforms: [linux, macos, windows]
 metadata:

@@ -1,13 +1,17 @@
 ---
-name: dogfood
-description: "Exploratory QA of web apps: find bugs, evidence, reports."
-version: 1.0.0
 metadata:
   hermes:
-    tags: [qa, testing, browser, web, dogfood]
-    related_skills: []
+    tags:
+    - qa
+    - testing
+    - browser
+    - web
+    - dogfood
+    related_skills: ~
+  version: 1.0.0
+description: 'Exploratory QA of web apps: find bugs, evidence, reports.'
+name: dogfood
 ---
-
 # Dogfood: Systematic Web Application QA Testing
 
 ## Overview

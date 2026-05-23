@@ -1,13 +1,15 @@
 ---
-name: vendor-model-manager
-description: 供应商模型分类管理系统 - 按角色分类管理模型，连续失败自动删除，无可用时汇报授权
-version: 1.0.0
-author: 马丞相
 metadata:
-  tags: [vendor, model-manager, auto-cleanup]
-  schedule: "0 5 * * *"  # 每天早上5点
+  tags:
+  - vendor
+  - model-manager
+  - auto-cleanup
+  schedule: 0 5 * * *
+  version: 1.0.0
+  author: 马丞相
+description: 供应商模型分类管理系统 - 按角色分类管理模型，连续失败自动删除，无可用时汇报授权
+name: vendor-model-manager
 ---
-
 # 供应商模型分类管理系统
 
 ## 功能概述

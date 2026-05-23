@@ -1,18 +1,20 @@
 ---
-name: auto-router
-description: 自动路由系统 - 根据任务类型自动调度到对应角色处理，完成后汇报结果给主上
-version: 1.0.0
-author: 马丞相
 metadata:
-  tags: [router, multi-agent, task-dispatch]
+  tags:
+  - router
+  - multi-agent
+  - task-dispatch
   triggers:
-    - 编程任务
-    - 图片分析
-    - 写作任务
-    - 研究调研
-    - 数据处理
+  - 编程任务
+  - 图片分析
+  - 写作任务
+  - 研究调研
+  - 数据处理
+  version: 1.0.0
+  author: 马丞相
+description: 自动路由系统 - 根据任务类型自动调度到对应角色处理，完成后汇报结果给主上
+name: auto-router
 ---
-
 # 自动路由系统
 
 ## 角色体系

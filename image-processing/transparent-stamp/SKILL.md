@@ -1,13 +1,21 @@
 ---
-name: transparent-stamp
-description: "印章图片处理：JPG去白底转PNG透明背景+红色增强+边缘羽化，通过Telegram发送"
-version: 1.0.0
 metadata:
   hermes:
-    tags: [image-processing, stamp, transparent, png, telegram]
-    aliases: [stamp, 印章, 去背景, remove-background]
+    tags:
+    - image-processing
+    - stamp
+    - transparent
+    - png
+    - telegram
+    aliases:
+    - stamp
+    - 印章
+    - 去背景
+    - remove-background
+  version: 1.0.0
+description: 印章图片处理：JPG去白底转PNG透明背景+红色增强+边缘羽化，通过Telegram发送
+name: transparent-stamp
 ---
-
 # 印章图片透明化处理 Skill
 
 将 JPG/PNG 图片的白色背景移除，转换为透明背景 PNG 格式，增强印章红色效果。

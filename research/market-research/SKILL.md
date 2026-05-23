@@ -1,14 +1,28 @@
 ---
-name: market-research
-description: "Stock market, financial data, and business intelligence research — A股/港股/美股 indices, sectors, concepts, and news via public APIs and web scraping."
-version: 1.0.0
-platforms: [linux, macos]
 metadata:
   hermes:
-    tags: [stock, market, finance, A股, 港股, 美股, financial, market-data, indices, sectors, concepts]
-    related_skills: [blogwatcher]
+    tags:
+    - stock
+    - market
+    - finance
+    - A股
+    - 港股
+    - 美股
+    - financial
+    - market-data
+    - indices
+    - sectors
+    - concepts
+    related_skills:
+    - blogwatcher
+  version: 1.0.0
+  platforms:
+  - linux
+  - macos
+description: Stock market, financial data, and business intelligence research — A股/港股/美股
+  indices, sectors, concepts, and news via public APIs and web scraping.
+name: market-research
 ---
-
 # Market Research
 
 Research stock market data, indices, sector performance, concept themes, and financial news. Covers Chinese A股 (via 东方财富 Eastmoney), Hong Kong, and US markets.

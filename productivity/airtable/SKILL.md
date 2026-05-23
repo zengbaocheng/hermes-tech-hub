@@ -1,19 +1,27 @@
 ---
-name: airtable
-description: Airtable REST API via curl. Records CRUD, filters, upserts.
-version: 1.1.0
-author: community
-license: MIT
-platforms: [linux, macos, windows]
-prerequisites:
-  env_vars: [AIRTABLE_API_KEY]
-  commands: [curl]
 metadata:
   hermes:
-    tags: [Airtable, Productivity, Database, API]
+    tags:
+    - Airtable
+    - Productivity
+    - Database
+    - API
     homepage: https://airtable.com/developers/web/api/introduction
+  version: 1.1.0
+  author: community
+  platforms:
+  - linux
+  - macos
+  - windows
+  prerequisites:
+    env_vars:
+    - AIRTABLE_API_KEY
+    commands:
+    - curl
+description: Airtable REST API via curl. Records CRUD, filters, upserts.
+license: MIT
+name: airtable
 ---
-
 # Airtable — Bases, Tables & Records
 
 Work with Airtable's REST API directly via `curl` using the `terminal` tool. No MCP server, no OAuth flow, no Python SDK — just `curl` and a personal access token.
