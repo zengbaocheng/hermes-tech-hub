@@ -1,6 +1,6 @@
 # Hermes Agent 生态圈深度扫描（第二版）
 
-> 扫描时间：2026-05-23
+> 扫描时间：2026-05-23（V3 补充：2026-05-23 第三轮扫描 → [V3 全景报告](hermes-ecosystem-v3.md)）
 > 来源：GitHub 公开仓库
 > 关键词：hermes-agent, hermes agent framework（按 Stars 降序）
 
