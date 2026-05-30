@@ -1,74 +1,40 @@
-# vendors/README.md — 外部技术库
-
 # 🌐 外部技术资源库
 
-> 从 GitHub 爬取的与 Hermes Agent 生态相关的优秀开源项目。
-> 包含学习笔记、集成指南和适配分析。
+> 自动从 GitHub 爬取的 Hermes Agent 生态相关开源项目
+> 定时更新: 2026-05-31 11:10
 
-## 分类索引
+### Hermes Ecosystem
+| 项目 | ⭐ 星 | 语言 | 说明 |
+|------|:----:|:----:|------|
+| [NousResearch/hermes-agent](vendors/hermes-ecosystem/hermes-agent/) | ⭐173628 | Python | Hermes Agent 核心项目 |
+| [farion1231/cc-switch](vendors/hermes-ecosystem/cc-switch/) | ⭐85528 | Rust | 跨平台桌面助手 |
+| [thedotmack/claude-mem](vendors/hermes-ecosystem/claude-mem/) | ⭐79737 | TypeScript | Agent 持久上下文 |
+| [nexu-io/open-design](vendors/hermes-ecosystem/open-design/) | ⭐55886 | TypeScript | 本地优先设计工具 |
+| [mem0ai/mem0](vendors/hermes-ecosystem/mem0/) | ⭐57155 | Python | 通用 AI 记忆层 |
+| [CherryHQ/cherry-studio](vendors/hermes-ecosystem/cherry-studio/) | ⭐46619 | TypeScript | AI 生产力工作室 |
+| [1Panel-dev/1Panel](vendors/hermes-ecosystem/1panel/) | ⭐35675 | Go | AI VPS 面板 |
+| [colbymchenry/codegraph](vendors/hermes-ecosystem/codegraph/) | ⭐34269 | TypeScript | 代码知识图谱 |
+| [iOfficeAI/AionUi](vendors/hermes-ecosystem/aionui/) | ⭐27242 | TypeScript | 24/7 同行桌面应用 |
+| [OthmanAdi/planning-with-files](vendors/hermes-ecosystem/planning-with-files/) | ⭐22362 | Python | Manus 式持久化规划 |
+| [NVIDIA/NemoClaw](vendors/hermes-ecosystem/nemoclaw/) | ⭐20726 | TypeScript | NVIDIA 安全沙箱 |
+| [garrytan/gbrain](vendors/hermes-ecosystem/gbrain/) | ⭐19898 | TypeScript | Agent 大脑知识图谱 |
+| [langbot-app/LangBot](vendors/hermes-ecosystem/langbot/) | ⭐16152 | Python | 多平台 AI 机器人 |
+| [jnMetaCode/agency-agents-zh](vendors/hermes-ecosystem/agency-agents-zh/) | ⭐13373 | Shell | 211 专家角色 |
+| [nesquena/hermes-webui](vendors/hermes-ecosystem/hermes-webui/) | ⭐9351 | Python | Web 端 Hermes |
+| [fathah/hermes-desktop](vendors/hermes-ecosystem/hermes-desktop/) | ⭐8717 | TypeScript | 桌面伴侣 |
+| [mnfst/manifest](vendors/hermes-ecosystem/manifest/) | ⭐6692 | TypeScript | 智能模型路由 |
+| [EKKOLearnAI/hermes-web-ui](vendors/hermes-ecosystem/hermes-web-ui/) | ⭐6666 | TypeScript | Web 仪表盘 |
+| [Sylinko/Everywhere](vendors/hermes-ecosystem/sylinko-everywhere/) | ⭐5983 | C# | 桌面 AI 助手 🆕 |
+| [the-open-agent/openagent](vendors/hermes-ecosystem/the-open-agent-openagent/) | ⭐5095 | Go | 个人 AI 助手 🆕 |
+| [outsourc-e/hermes-workspace](vendors/hermes-ecosystem/hermes-workspace/) | ⭐5092 | JavaScript | Web 工作空间 |
+| [alchaincyf/hermes-agent-orange-book](vendors/hermes-ecosystem/hermes-agent-orange-book/) | ⭐3954 | — | 橙皮书教程 |
+| [NousResearch/hermes-agent-self-evolution](vendors/hermes-ecosystem/hermes-agent-self-evolution/) | ⭐3724 | Python | 自我进化 |
+| [0xNyk/awesome-hermes-agent](vendors/hermes-ecosystem/awesome-hermes-agent/) | ⭐3571 | — | 生态精选列表 |
+| [LetsFG/LetsFG](vendors/hermes-ecosystem/letsfg/) | ⭐1126 | Python | MCP 航班搜索 |
+| [awizemann/scarf](vendors/hermes-ecosystem/scarf/) | ⭐555 | Swift | macOS/iOS Hermes |
+| [yoloshii/ClawMem](vendors/hermes-ecosystem/clawmem/) | ⭐178 | TypeScript | 设备端记忆层 |
 
-### 🧬 Hermes 核心生态
-
-| 项目 | ⭐ 星 | 说明 |
-|------|:-----:|------|
-| [Hermes Agent Self-Evolution](hermes-ecosystem/hermes-self-evolution/README.md) | 3,485 | Hermes Agent 自我进化系统 — 自动优化技能、提示词和工作流 |
-| [Awesome Hermes Agent](hermes-ecosystem/awesome-hermes-agent/README.md) | 3,310 | Hermes Agent 精选资源大全 — 技能、工具、集成、最佳实践 |
-| [Hermes Workspace](hermes-ecosystem/hermes-workspace/README.md) | 4,727 | Hermes Agent 原生 Web 工作台 — 聊天、终端、记忆、技能管理 |
-| [Hermes Web UI](hermes-ecosystem/hermes-web-ui/README.md) | 5,811 | Hermes Agent Web 仪表盘 — 多平台 AI 聊天、会话管理 |
-
-### 🎯 技能集合
-
-| 项目 | ⭐ 星 | 说明 |
-|------|:-----:|------|
-| [Karpathy Skills](skills-collection/karpathy-skills/README.md) | 148,558 | Andrej Karpathy 风格的 CLAUDE.md 技能 — 顶级 AI 工程师的编码习惯 |
-| [Superpowers 中文版](skills-collection/superpowers-zh/README.md) | 3,799 | AI 编程超能力中文增强版 — 6 个原创 skills，适配 Claude Code / Cursor |
-| [SkillClaw](skills-collection/skillclaw/README.md) | 1,438 | 让技能集体进化 — 代理进化器，自动化技能优化 |
-
-### 🔌 MCP 服务器
-
-| 项目 | ⭐ 星 | 说明 |
-|------|:-----:|------|
-| [FastAPI MCP](mcp-servers/fastapi-mcp/README.md) | 11,875 | 将 FastAPI 端点暴露为 MCP 工具，支持认证 |
-| [MCP Use](mcp-servers/mcp-use/README.md) | 9,991 | 全栈 MCP 框架 — 为 ChatGPT / Claude 开发 MCP 应用 |
-
-### 🧠 记忆系统
-
-| 项目 | ⭐ 星 | 说明 |
-|------|:-----:|------|
-| [MemOS](memory-systems/memos/README.md) | 9,351 | 自进化记忆操作系统 — 超持久记忆、混合检索，为 LLM & AI Agent 设计 |
-
-### 📋 规划工作流
-
-| 项目 | ⭐ 星 | 说明 |
-|------|:-----:|------|
-| [Planning with Files](planning-workflows/planning-with-files/README.md) | 21,918 | Manus 风格持久化 Markdown 规划 — Claude Code 技能，文件即规划 |
-
-### 🛠️ 管理工具
-
-| 项目 | ⭐ 星 | 说明 |
-|------|:-----:|------|
-| [Hermes Control Room](management-tools/hermes-control-room/README.md) | 839 | Hermes Agent 控制室 — 从单 VPS 管理多 agent 的模板 |
-| [ClawPanel](management-tools/clawpanel/README.md) | 2,749 | OpenClaw & Hermes Agent 多引擎管理面板 — Tauri 跨平台桌面应用 |
-
-## 💡 利用指南
-
-本目录的项目可以通过以下方式发挥作用：
-
-### 1️⃣ 直接集成
-- **技能类** → 复制其 SKILL.md / CLAUDE.md 到 `~/.hermes/skills/`
-- **MCP 类** → 通过 `hermes mcp add` 注册为 MCP 服务器
-- **UI/面板** → 本地部署作为 Hermes 管理界面
-
-### 2️⃣ 学习借鉴
-- 阅读 README 了解项目的核心设计理念
-- 将优秀的工作流/提示词/配置迁移到自己的 Hermes 环境
-- 追踪高星项目的更新，紧跟生态发展趋势
-
-### 3️⃣ 融合创新
-- 把多个项目的优秀特性组合使用
-- 将外部的 Skills 适配为 Hermes 格式的 SKILL.md
-- 用自己的经验反向改进和 PR 到这些项目
-
----
-
-*自动更新于 2026-05-23 | 共 13 个外部项目*
+### Skills Collection
+| 项目 | ⭐ 星 | 语言 | 说明 |
+|------|:----:|:----:|------|
+| [jnMetaCode/superpowers-zh](vendors/skills-collection/superpowers-zh/) | ⭐4299 | Shell | AI 编程超能力中文版 🆕 |
