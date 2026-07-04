@@ -1,42 +1,68 @@
 # 🌐 外部技术资源库
 
 > 自动从 GitHub 爬取的 Hermes Agent 生态相关开源项目
-> 定时更新: 2026-06-28 06:00 CST
+> 定时更新: 2026-07-05 06:00 CST
 
-### Hermes Ecosystem
+## 新增候选项目 (V8 — 2026-07-05)
 
-| 项目 | ⭐ 星 | 语言 | 说明 |
-|------|:----:|:----:|------|
-| [NousResearch/hermes-agent](vendors/hermes-ecosystem/hermes-agent/) | ⭐204298 | Python | Hermes Agent 核心项目 |
-| [farion1231/cc-switch](vendors/hermes-ecosystem/cc-switch/) | ⭐109474 | Rust | 跨平台桌面助手 |
-| [thedotmack/claude-mem](vendors/hermes-ecosystem/claude-mem/) | ⭐84732 | JavaScript | Agent 持久上下文 |
-| [nexu-io/open-design](vendors/hermes-ecosystem/open-design/) | ⭐71992 | TypeScript | 本地优先设计工具 |
-| [mem0ai/mem0](vendors/hermes-ecosystem/mem0/) | ⭐59589 | Python | 通用 AI 记忆层 |
-| [CherryHQ/cherry-studio](vendors/hermes-ecosystem/cherry-studio/) | ⭐47888 | TypeScript | AI 生产力工作室 |
-| [1Panel-dev/1Panel](vendors/hermes-ecosystem/1panel/) | ⭐36013 | Go | AI VPS 面板 |
-| [colbymchenry/codegraph](vendors/hermes-ecosystem/codegraph/) | ⭐55359 | TypeScript | 代码知识图谱 |
-| [iOfficeAI/AionUi](vendors/hermes-ecosystem/aionui/) | ⭐28953 | TypeScript | 24/7 同行桌面应用 |
-| [OthmanAdi/planning-with-files](vendors/hermes-ecosystem/planning-with-files/) | ⭐24023 | Python | Manus 式持久化规划 |
-| [NVIDIA/NemoClaw](vendors/hermes-ecosystem/nemoclaw/) | ⭐21454 | TypeScript | NVIDIA 安全沙箱 |
-| [garrytan/gbrain](vendors/hermes-ecosystem/gbrain/) | ⭐24304 | TypeScript | Agent 大脑知识图谱 |
-| [langbot-app/LangBot](vendors/hermes-ecosystem/langbot/) | ⭐16527 | Python | 多平台 AI 机器人 |
-| [jnMetaCode/agency-agents-zh](vendors/hermes-ecosystem/agency-agents-zh/) | ⭐15704 | Shell | 266 专家角色 |
-| [nesquena/hermes-webui](vendors/hermes-ecosystem/hermes-webui/) | ⭐15098 | Python | Web 端 Hermes |
-| [fathah/hermes-desktop](vendors/hermes-ecosystem/hermes-desktop/) | ⭐12782 | TypeScript | 桌面伴侣 |
-| [mnfst/manifest](vendors/hermes-ecosystem/manifest/) | ⭐7143 | TypeScript | 智能模型路由 |
-| [EKKOLearnAI/hermes-studio](vendors/hermes-ecosystem/hermes-studio/) | ⭐8573 | TypeScript | Web 仪表盘 (原名 hermes-web-ui) |
-| [Sylinko/Everywhere](vendors/hermes-ecosystem/sylinko-everywhere/) | ⭐6117 | C# | 桌面 AI 助手 |
-| [the-open-agent/openagent](vendors/hermes-ecosystem/the-open-agent-openagent/) | ⭐5311 | Go | 个人 AI 助手 |
-| [outsourc-e/hermes-workspace](vendors/hermes-ecosystem/hermes-workspace/) | ⭐5872 | JavaScript | Web 工作空间 |
-| [alchaincyf/hermes-agent-orange-book](vendors/hermes-ecosystem/hermes-agent-orange-book/) | ⭐4559 | — | 橙皮书教程 |
-| [NousResearch/hermes-agent-self-evolution](vendors/hermes-ecosystem/hermes-agent-self-evolution/) | ⭐4368 | Python | 自我进化 |
-| [0xNyk/awesome-hermes-agent](vendors/hermes-ecosystem/awesome-hermes-agent/) | ⭐4243 | — | 生态精选列表 |
-| [LetsFG/LetsFG](vendors/hermes-ecosystem/letsfg/) | ⭐1206 | Python | MCP 航班搜索 |
-| [awizemann/scarf](vendors/hermes-ecosystem/scarf/) | ⭐678 | Swift | macOS/iOS Hermes |
-| [yoloshii/ClawMem](vendors/hermes-ecosystem/clawmem/) | ⭐188 | TypeScript | 设备端记忆层 |
+| 项目 | Stars | 类别 | 描述 |
+|------|:-----:|:----:|------|
+| agent-of-empires/agent-of-empires | ⭐2,745 | hermes-ecosystem | Rust 多 Agent 编排器 (TUI/Web) |
+| LearnPrompt/LearnPrompt | ⭐2,510 | hermes-ecosystem | AIGC 课程平台，支持 Hermes |
+| dodo-reach/hermes-desktop | ⭐1,947 | hermes-ecosystem | macOS Hermes SSH 安全管理器 |
+| SamurAIGPT/awesome-hermes-agent | ⭐1,800 | hermes-ecosystem | 精选列表 (不同于 0xNyk) |
+| wondelai/skills | ⭐1,548 | skills-collection | agentskills.io 兼容技能市场 |
+| ClaudioDrews/memory-os | ⭐1,224 | memory-systems | 7层记忆操作系统 for Hermes |
+| Forsy-AI/agent-apprenticeship | ⭐1,219 | hermes-ecosystem | Agent 学徒生态 (循环学习) |
 
-### Skills Collection
+## 已收录项目 (27 个)
 
-| 项目 | ⭐ 星 | 语言 | 说明 |
-|------|:----:|:----:|------|
-| [jnMetaCode/superpowers-zh](vendors/skills-collection/superpowers-zh/) | ⭐6028 | JavaScript | AI 编程超能力中文版 |
+### hermes-ecosystem
+
+| # | 项目 | Stars | 语言 |
+|:-:|------|:-----:|:----:|
+| 1 | NousResearch/hermes-agent | ⭐209,162 | Python |
+| 2 | farion1231/cc-switch | ⭐113,171 | Rust |
+| 3 | thedotmack/claude-mem | ⭐85,818 | JavaScript |
+| 4 | mem0ai/mem0 | ⭐60,086 | Python |
+| 5 | nexu-io/open-design | ⭐74,940 | TypeScript |
+| 6 | CherryHQ/cherry-studio | ⭐48,157 | TypeScript |
+| 7 | 1Panel-dev/1Panel | ⭐36,078 | Go |
+| 8 | colbymchenry/codegraph | ⭐57,523 | TypeScript |
+| 9 | iOfficeAI/AionUi | ⭐29,276 | TypeScript |
+| 10 | OthmanAdi/planning-with-files | ⭐24,496 | Python |
+| 11 | NVIDIA/NemoClaw | ⭐21,598 | TypeScript |
+| 12 | garrytan/gbrain | ⭐25,005 | TypeScript |
+| 13 | langbot-app/LangBot | ⭐16,665 | Python |
+| 14 | jnMetaCode/agency-agents-zh | ⭐16,598 | Shell |
+| 15 | nesquena/hermes-webui | ⭐15,456 | Python |
+| 16 | fathah/hermes-desktop | ⭐13,071 | TypeScript |
+| 17 | mnfst/manifest | ⭐7,201 | TypeScript |
+| 18 | EKKOLearnAI/hermes-studio | ⭐8,813 | TypeScript |
+| 19 | Sylinko/Everywhere | ⭐6,140 | C# |
+| 20 | the-open-agent/openagent | ⭐5,337 | Go |
+| 21 | outsourc-e/hermes-workspace | ⭐5,956 | JavaScript |
+| 22 | alchaincyf/hermes-agent-orange-book | ⭐4,606 | — |
+| 23 | NousResearch/hermes-agent-self-evolution | ⭐4,497 | Python |
+| 24 | 0xNyk/awesome-hermes-agent | ⭐4,415 | — |
+| 25 | LetsFG/LetsFG | ⭐1,248 | Python |
+| 26 | awizemann/scarf | ⭐696 | Swift |
+| 27 | yoloshii/ClawMem | ⭐189 | TypeScript |
+
+### skills-collection
+
+| # | 项目 | Stars | 语言 |
+|:-:|------|:-----:|:----:|
+| 1 | jnMetaCode/superpowers-zh | ⭐6,367 | JavaScript |
+
+## 目录结构
+
+```
+vendors/
+  hermes-ecosystem/       — Hermes 自身生态项目
+  skills-collection/      — 技能集合项目
+  mcp-servers/            — MCP 服务器 (待收录)
+  memory-systems/         — 记忆系统项目
+  planning-workflows/     — 规划工作流
+  management-tools/       — 管理面板工具
+```
